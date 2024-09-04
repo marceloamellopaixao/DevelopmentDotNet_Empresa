@@ -119,32 +119,6 @@
     ]
   },
   {
-    "ContainingType": "Empresa.Controllers.DepartamentoController",
-    "Method": "GetDepartamentoByNome",
-    "RelativePath": "api/Departamento/{DepartamentoNome}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "DepartamentoNome",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Empresa.Models.Departamento, Empresa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "Empresa.Controllers.EmpregadoController",
     "Method": "GetEmpregados",
     "RelativePath": "api/Empregado",

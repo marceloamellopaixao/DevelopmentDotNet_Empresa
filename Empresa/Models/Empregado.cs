@@ -14,5 +14,6 @@ public class Empregado
     public Genero Genero { get; set; }
     public string? FotoUrl { get; set; }
     public Departamento Departamento { get; set; }
+    public int DepartamentoId { get; set; }
 
 }

@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F601DB8-3DA1-437B-B801-C7E1035D20C3}|Empresa\\Empresa.csproj|c:\\users\\marceloamp\\documents\\fiap\\2 ano\\2_semestre\\development dotnet - projetos\\empresa\\empresa\\controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F601DB8-3DA1-437B-B801-C7E1035D20C3}|Empresa\\Empresa.csproj|solutionrelative:empresa\\controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F601DB8-3DA1-437B-B801-C7E1035D20C3}|Empresa\\Empresa.csproj|c:\\users\\marceloamp\\documents\\fiap\\2 ano\\2_semestre\\development dotnet - projetos\\empresa\\empresa\\repository\\empregadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F601DB8-3DA1-437B-B801-C7E1035D20C3}|Empresa\\Empresa.csproj|solutionrelative:empresa\\repository\\empregadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F601DB8-3DA1-437B-B801-C7E1035D20C3}|Empresa\\Empresa.csproj|c:\\users\\marceloamp\\documents\\fiap\\2 ano\\2_semestre\\development dotnet - projetos\\empresa\\empresa\\controllers\\empregadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F601DB8-3DA1-437B-B801-C7E1035D20C3}|Empresa\\Empresa.csproj|solutionrelative:empresa\\controllers\\empregadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F601DB8-3DA1-437B-B801-C7E1035D20C3}|Empresa\\Empresa.csproj|c:\\users\\marceloamp\\documents\\fiap\\2 ano\\2_semestre\\development dotnet - projetos\\empresa\\empresa\\models\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F601DB8-3DA1-437B-B801-C7E1035D20C3}|Empresa\\Empresa.csproj|solutionrelative:empresa\\models\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F601DB8-3DA1-437B-B801-C7E1035D20C3}|Empresa\\Empresa.csproj|c:\\users\\marceloamp\\documents\\fiap\\2 ano\\2_semestre\\development dotnet - projetos\\empresa\\empresa\\models\\empregado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F601DB8-3DA1-437B-B801-C7E1035D20C3}|Empresa\\Empresa.csproj|solutionrelative:empresa\\models\\empregado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Migrations\\20240904143109_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Empresa\\Migrations\\20240904143109_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 554,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,51 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmpregadoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Repository\\EmpregadoRepository.cs",
-              "RelativeDocumentMoniker": "Empresa\\Repository\\EmpregadoRepository.cs",
-              "ToolTip": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Repository\\EmpregadoRepository.cs",
-              "RelativeToolTip": "Empresa\\Repository\\EmpregadoRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAIwCoAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "20240904143109_initial.cs",
+              "DocumentMoniker": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Migrations\\20240904143109_initial.cs",
+              "RelativeDocumentMoniker": "Empresa\\Migrations\\20240904143109_initial.cs",
+              "ToolTip": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Migrations\\20240904143109_initial.cs",
+              "RelativeToolTip": "Empresa\\Migrations\\20240904143109_initial.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T18:37:36.637Z"
+              "WhenOpened": "2024-09-04T14:31:10.051Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Departamento.cs",
+              "DocumentMoniker": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Models\\Departamento.cs",
+              "RelativeDocumentMoniker": "Empresa\\Models\\Departamento.cs",
+              "ToolTip": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Models\\Departamento.cs",
+              "RelativeToolTip": "Empresa\\Models\\Departamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T14:25:14.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Empregado.cs",
               "DocumentMoniker": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Models\\Empregado.cs",
               "RelativeDocumentMoniker": "Empresa\\Models\\Empregado.cs",
               "ToolTip": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Models\\Empregado.cs",
               "RelativeToolTip": "Empresa\\Models\\Empregado.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T18:25:50.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EmpregadoController.cs",
-              "DocumentMoniker": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Controllers\\EmpregadoController.cs",
-              "RelativeDocumentMoniker": "Empresa\\Controllers\\EmpregadoController.cs",
-              "ToolTip": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Controllers\\EmpregadoController.cs",
-              "RelativeToolTip": "Empresa\\Controllers\\EmpregadoController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAQwDIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T18:23:03.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DepartamentoController.cs",
-              "DocumentMoniker": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Controllers\\DepartamentoController.cs",
-              "RelativeDocumentMoniker": "Empresa\\Controllers\\DepartamentoController.cs",
-              "ToolTip": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\2 Ano\\2_Semestre\\Development DotNet - Projetos\\Empresa\\Empresa\\Controllers\\DepartamentoController.cs",
-              "RelativeToolTip": "Empresa\\Controllers\\DepartamentoController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T18:22:51.519Z",
+              "WhenOpened": "2024-09-03T18:25:50.456Z",
               "EditorCaption": ""
             }
           ]

@@ -247,3 +247,4 @@ C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projeto
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\Empresa.genruntimeconfig.cache
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\ref\Empresa.dll
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\libman.json
+C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\Empresa.sourcelink.json
