@@ -125,11 +125,13 @@ C:\Users\User\Documents\FIAP\Technos\Global Soluction\Semestre_1\csharp_api\Empr
 C:\Users\User\Documents\FIAP\Technos\Global Soluction\Semestre_1\csharp_api\Empresa\Empresa\obj\Debug\net8.0\ref\Empresa.dll
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\appsettings.json
+C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\libman.json
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\Empresa.exe
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\Empresa.deps.json
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\Empresa.runtimeconfig.json
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\Empresa.dll
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\Empresa.pdb
+C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\Empresa.xml
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\Humanizer.dll
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -232,6 +234,7 @@ C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projeto
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\Empresa.csproj.CoreCompileInputs.cache
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\Empresa.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\Empresa.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\Empresa.sourcelink.json
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\staticwebassets\msbuild.Empresa.Microsoft.AspNetCore.StaticWebAssets.props
@@ -243,8 +246,7 @@ C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projeto
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\Empresa.csproj.Up2Date
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\Empresa.dll
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\refint\Empresa.dll
+C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\Empresa.xml
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\Empresa.pdb
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\Empresa.genruntimeconfig.cache
 C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\ref\Empresa.dll
-C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\bin\Debug\net8.0\libman.json
-C:\Users\MarceloAmp\Documents\FIAP\2 Ano\2_Semestre\Development DotNet - Projetos\Empresa\Empresa\obj\Debug\net8.0\Empresa.sourcelink.json

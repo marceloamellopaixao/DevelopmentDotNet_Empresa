@@ -2,7 +2,7 @@
   {
     "ContainingType": "Empresa.Controllers.DepartamentoController",
     "Method": "GetDepartamentos",
-    "RelativePath": "api/Departamento",
+    "RelativePath": "api/departamento",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,7 +12,7 @@
   {
     "ContainingType": "Empresa.Controllers.DepartamentoController",
     "Method": "CreateDepartamento",
-    "RelativePath": "api/Departamento",
+    "RelativePath": "api/departamento",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -38,7 +38,7 @@
   {
     "ContainingType": "Empresa.Controllers.DepartamentoController",
     "Method": "GetDepartamentoById",
-    "RelativePath": "api/Departamento/{DepartamentoId}",
+    "RelativePath": "api/departamento/{DepartamentoId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -64,19 +64,19 @@
   {
     "ContainingType": "Empresa.Controllers.DepartamentoController",
     "Method": "UpdateDepartamento",
-    "RelativePath": "api/Departamento/{DepartamentoId}",
+    "RelativePath": "api/departamento/{DepartamentoId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "departamento",
-        "Type": "Empresa.Models.Departamento",
+        "Name": "DepartamentoId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "DepartamentoId",
-        "Type": "",
+        "Name": "departamento",
+        "Type": "Empresa.Models.Departamento",
         "IsRequired": true
       }
     ],
@@ -95,7 +95,7 @@
   {
     "ContainingType": "Empresa.Controllers.DepartamentoController",
     "Method": "DeleteDepartamento",
-    "RelativePath": "api/Departamento/{DepartamentoId}",
+    "RelativePath": "api/departamento/{DepartamentoId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -119,9 +119,35 @@
     ]
   },
   {
+    "ContainingType": "Empresa.Controllers.DepartamentoController",
+    "Method": "GetEmpregadosByDepartamentoId",
+    "RelativePath": "api/departamento/empregados/{DepartamentoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DepartamentoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Empresa.Models.Empregado, Empresa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Empresa.Controllers.EmpregadoController",
     "Method": "GetEmpregados",
-    "RelativePath": "api/Empregado",
+    "RelativePath": "api/empregado",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -131,7 +157,7 @@
   {
     "ContainingType": "Empresa.Controllers.EmpregadoController",
     "Method": "CreateEmpregado",
-    "RelativePath": "api/Empregado",
+    "RelativePath": "api/empregado",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -157,7 +183,7 @@
   {
     "ContainingType": "Empresa.Controllers.EmpregadoController",
     "Method": "GetEmpregadoById",
-    "RelativePath": "api/Empregado/{EmpregadoId}",
+    "RelativePath": "api/empregado/{EmpregadoId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -183,19 +209,19 @@
   {
     "ContainingType": "Empresa.Controllers.EmpregadoController",
     "Method": "UpdateEmpregado",
-    "RelativePath": "api/Empregado/{EmpregadoId}",
+    "RelativePath": "api/empregado/{EmpregadoId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "empregado",
-        "Type": "Empresa.Models.Empregado",
+        "Name": "EmpregadoId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "EmpregadoId",
-        "Type": "",
+        "Name": "empregado",
+        "Type": "Empresa.Models.Empregado",
         "IsRequired": true
       }
     ],
@@ -214,7 +240,7 @@
   {
     "ContainingType": "Empresa.Controllers.EmpregadoController",
     "Method": "DeleteEmpregado",
-    "RelativePath": "api/Empregado/{EmpregadoId}",
+    "RelativePath": "api/empregado/{EmpregadoId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

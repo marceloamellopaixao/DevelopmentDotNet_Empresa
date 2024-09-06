@@ -1,11 +1,12 @@
 ﻿using Empresa.Models;
+using Empresa.Repository;
 using Empresa.Repository.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Empresa.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/departamento")]
 [ApiController]
 public class DepartamentoController : ControllerBase
 {
@@ -39,7 +40,25 @@ public class DepartamentoController : ControllerBase
             {
                 return NotFound();
             }
-            return result;
+            return Ok(result);
+        }
+        catch (Exception)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao recuperar dados do banco de dados");
+        }
+    }
+
+    [HttpGet("empregados/{DepartamentoId:int}")]
+    public async Task<ActionResult<IEnumerable<Empregado>>> GetEmpregadosByDepartamentoId(int DepartamentoId)
+    {
+        try
+        {
+            var empregados = await departamentoRepository.GetEmpregadosByDepartamentoId(DepartamentoId);
+            if (!empregados.Any()) // Verifica se a lista de empregados está vazia
+            {
+                return NotFound($"Nenhum empregado encontrado para o departamento ID: {DepartamentoId}");
+            }
+            return Ok(empregados);
         }
         catch (Exception)
         {
@@ -58,7 +77,9 @@ public class DepartamentoController : ControllerBase
             }
 
             var createdDepartamento = await departamentoRepository.AddDepartamento(departamento);
-            return CreatedAtAction(nameof(GetDepartamentoById), new { DepartamentoId = createdDepartamento.DepartamentoId }, createdDepartamento);
+            return CreatedAtAction(nameof(GetDepartamentoById), new { 
+                DepartamentoId = createdDepartamento.DepartamentoId }, 
+                createdDepartamento);
         }
         catch (Exception)
         {
@@ -67,22 +88,24 @@ public class DepartamentoController : ControllerBase
     }
 
     [HttpPut("{DepartamentoId:int}")]
-    public async Task<ActionResult<Departamento>> UpdateDepartamento([FromBody] Departamento departamento)
+    public async Task<ActionResult<Departamento>> UpdateDepartamento(int DepartamentoId, [FromBody] Departamento departamento)
     {
         try
         {
             if (departamento == null)
             {
-                return BadRequest();
+                return BadRequest("Dados do departamento inválidos.");
             }
 
-            var result = await departamentoRepository.GetDepartamentoById(departamento.DepartamentoId);
-            if (result == null)
+            departamento.DepartamentoId = DepartamentoId;
+
+            var updatedDepartamento = await departamentoRepository.UpdateDepartamento(departamento);
+            if (updatedDepartamento == null)
             {
-                return NotFound($"Departamento = {departamento.DepartamentoNome}, não foi encontrado");
+                return NotFound($"Empregado com ID {DepartamentoId} não foi encontrado.");
             }
 
-            return await departamentoRepository.UpdateDepartamento(departamento);
+            return Ok(updatedDepartamento);
         }
         catch (Exception)
         {

@@ -24,9 +24,18 @@ public class DepartamentoRepository : IDepartamentoRepository
         return await _dbContext.Departamentos.FirstOrDefaultAsync(d => d.DepartamentoId == DepartamentoId);
     }
 
-    public async Task<IEnumerable<Departamento>> GetDepartamentoByNome(string DepartamentoNome)
+    public async Task<IEnumerable<Empregado>> GetEmpregadosByDepartamentoId(int DepartamentoId)
     {
-        return await _dbContext.Departamentos.Where(d => d.DepartamentoNome.Contains(DepartamentoNome)).ToListAsync();
+        var departamento = await _dbContext.Departamentos.FindAsync(DepartamentoId);
+
+        if (departamento == null)
+        {
+            return Enumerable.Empty<Empregado>(); // Retorna uma lista vazia se o departamento não existir
+        }
+
+        return await _dbContext.Empregados
+            .Where(e => e.DepartamentoId == DepartamentoId)
+            .ToListAsync();
     }
 
     public async Task<Departamento> AddDepartamento(Departamento departamento)
@@ -39,15 +48,17 @@ public class DepartamentoRepository : IDepartamentoRepository
 
     public async Task<Departamento> UpdateDepartamento(Departamento departamento)
     {
-        var result = await _dbContext.Departamentos.FirstOrDefaultAsync(d => d.DepartamentoId == departamento.DepartamentoId);
-        if (result != null)
+        var existingDepartamento = await _dbContext.Departamentos.FirstOrDefaultAsync(d => d.DepartamentoId == departamento.DepartamentoId);
+        if (existingDepartamento == null)
         {
-            result.DepartamentoNome = departamento.DepartamentoNome;
-            await _dbContext.SaveChangesAsync();
-
-            return result;
+            return null; // Retorna null se o departamento não for encontrado
         }
-        return null;
+
+        // Atualiza o nome do departamento
+        existingDepartamento.DepartamentoNome = departamento.DepartamentoNome;
+
+        await _dbContext.SaveChangesAsync();
+        return existingDepartamento;
     }
 
     public async void DeleteDepartamentoById(int DepartamentoId)

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Empresa.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/empregado")]
 [ApiController]
 public class EmpregadoController : ControllerBase
 {
@@ -15,6 +15,7 @@ public class EmpregadoController : ControllerBase
     {
         this.empregadoRepository = empregadoRepository;
     }
+    
 
     [HttpGet]
     public async Task<ActionResult> GetEmpregados()
@@ -39,7 +40,7 @@ public class EmpregadoController : ControllerBase
             {
                 return NotFound();
             }
-            return result;
+            return Ok(result);
         }
         catch (Exception)
         {
@@ -48,40 +49,47 @@ public class EmpregadoController : ControllerBase
 
     }
 
-
-
     [HttpPost]
     public async Task<ActionResult<Empregado>> CreateEmpregado([FromBody] Empregado empregado)
     {
         try
         {
-            if (empregado == null)
+            if (empregado == null || string.IsNullOrWhiteSpace(empregado.Nome))
             {
-                return BadRequest();
+                return BadRequest("Dados do empregado são inválidos.");
             }
 
-            var result = await empregadoRepository.AddEmpregado(empregado);
-            return CreatedAtAction(nameof(GetEmpregadoById), new { id = result.EmpregadoId }, result);
-
+            var createdEmpregado = await empregadoRepository.AddEmpregado(empregado);
+            return CreatedAtAction(nameof(GetEmpregadoById), new { 
+                EmpregadoId = createdEmpregado.EmpregadoId }, 
+                createdEmpregado);
         }
-        catch (Exception)
+        catch (Exception ex)
         {
+            // Realiza um Log (ex) se necessário
             return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao adicionar dados no banco de dados");
         }
     }
 
     [HttpPut("{EmpregadoId:int}")]
-    public async Task<ActionResult<Empregado>> UpdateEmpregado([FromBody] Empregado empregado)
+    public async Task<ActionResult<Empregado>> UpdateEmpregado(int EmpregadoId, [FromBody] Empregado empregado)
     {
         try
         {
-            var result = await empregadoRepository.GetEmpregadoById(empregado.EmpregadoId);
-            if (result == null)
+            if (empregado == null)
             {
-                return NotFound($"Empregado solicitado = {empregado.Nome}, não foi encontrado");
+                return BadRequest("Dados do empregado inválidos.");
             }
 
-            return await empregadoRepository.UpdateEmpregado(empregado);
+            empregado.EmpregadoId = EmpregadoId;
+
+            var updatedEmpregado = await empregadoRepository.UpdateEmpregado(empregado);
+            if (updatedEmpregado == null)
+            {
+                return NotFound($"Empregado com ID {EmpregadoId} não foi encontrado.");
+            }
+
+            return Ok(updatedEmpregado);
         }
         catch (Exception)
         {
