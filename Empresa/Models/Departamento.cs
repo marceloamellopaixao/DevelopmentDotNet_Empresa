@@ -8,7 +8,5 @@ public class Departamento
 {
     [Key]
     public int DepartamentoId { get; set; }
-    public string? DepartamentoNome { get; set; }
-    public List<Empregado> Empregados { get; set; }
-
+    public string DepartamentoNome { get; set; }
 }

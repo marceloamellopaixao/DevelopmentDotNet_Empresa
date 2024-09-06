@@ -12,8 +12,6 @@ public class Empregado
     public string? Sobrenome {  get; set; }
     public string? Email { get; set; }
     public Genero Genero { get; set; }
+    public int DepartamentoId { get; set; } // Chave estrangeira para o departamento
     public string? FotoUrl { get; set; }
-    public Departamento Departamento { get; set; }
-    public int DepartamentoId { get; set; }
-
 }
